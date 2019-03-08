@@ -19,6 +19,7 @@ class App extends Component {
         <NavigatorSection/>
         <BadgeSection/>
         <PermissionSection/>
+        {/** TODO: Set theme color */}
       </div>;
   }
 }
