@@ -3,6 +3,7 @@ import Section from './Section';
 import Navigator from './NavigatorSection';
 import NavigatorSection from './NavigatorSection';
 import BadgeSection from './BadgeSection';
+import PermissionSection from './PermissionSection';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         </p>
         <NavigatorSection/>
         <BadgeSection/>
+        <PermissionSection/>
       </div>;
   }
 }
