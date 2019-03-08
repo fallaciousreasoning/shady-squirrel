@@ -16,6 +16,7 @@ code {
 
 .section {
   border-top: 1px solid #3f6717;
+  margin: 10px;
 }
 
 .section-title {

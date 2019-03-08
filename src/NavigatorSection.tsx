@@ -1,6 +1,7 @@
 import * as React from 'react';
 import LabelledInput from "./LabelledInput";
 import { useState } from "react";
+import Section from './Section';
 
 export default (props) => {
     const [location, setLocation] = useState('example.com');
@@ -13,8 +14,10 @@ export default (props) => {
         window.location.href = to;
     }
 
-    return <div className="section-form">
-        <LabelledInput value={location} onChange={setLocation} onEnterPressed={navigate} />
-        <button onClick={navigate}>Navigate</button>
-    </div>
+    return <Section title="Custom Tab Bar Navigation">
+        <div className="section-form">
+            <LabelledInput value={location} onChange={setLocation} onEnterPressed={navigate} />
+            <button onClick={navigate}>Navigate</button>
+        </div>
+    </Section>;
 }

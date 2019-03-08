@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Section from './Section';
-import Navigator from './Navigator';
+import Navigator from './NavigatorSection';
+import NavigatorSection from './NavigatorSection';
+import BadgeSection from './BadgeSection';
 
 class App extends Component {
   render() {
@@ -9,9 +11,8 @@ class App extends Component {
         <p>
           This is a test for <a href="https://developers.google.com/web/progressive-web-apps/">Progressive Web Apps</a>. This site is a valid PWA.
         </p>
-        <Section title="Custom Tab Bar">
-          <Navigator/>
-        </Section>
+        <NavigatorSection/>
+        <BadgeSection/>
       </div>;
   }
 }
